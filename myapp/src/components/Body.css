@@ -1,0 +1,17 @@
+.cls{
+    border:10px solid yellow
+}
+
+form{
+    /* width: 50%; */
+    /* border: 1px solid black; */
+    display: block;
+    justify-content: center;
+    text-align: center;
+
+    padding: 20px;
+}
+form input{
+    margin: 5px;
+    padding: 10px;
+}
