@@ -13,7 +13,6 @@ export function Body() {
 
     return (
         <>
-
             <h1>{val}</h1>
             <div>
                 <button>increase</button>

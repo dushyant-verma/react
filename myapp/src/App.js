@@ -8,13 +8,17 @@ import { FormValidation } from './components/FormValidation';
 import { ClickCounter } from './components/ClickCounter';
 import { HideShow } from './components/hide&show';
 import Effects from './components/Effects';
-
+import {TodoApp} from "./components/todo-list-app";
+import Counter from './components/ClassComponent';
 
 
 // const body = Header
 // b()
 // let {Body,Footer} ={ Body:Body,Footer:Footer}
 function App() {
+  const data = 'hello world'
+  const newData = 'new hello world'
+  const str = 'This is an String'
   return (
     <>
       {/* <Header/> */}
@@ -22,9 +26,15 @@ function App() {
       {/* <Footer/> */}
       {/* <NavMenu/> */}
       {/* <FormValidation/> */}
-      {/* <ClickCounter/> */}
-      {/* <HideShow /> */}
-      <Effects/>
+
+      <ClickCounter name={data}/>
+      
+      <ClickCounter name={newData}/>
+
+      <HideShow  randomProp={str}/>
+      {/* <TodoApp /> */}
+      {/* <Effects/> */}
+      <Counter/>
     </>
   );
 }

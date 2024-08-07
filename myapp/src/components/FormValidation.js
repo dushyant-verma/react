@@ -1,6 +1,7 @@
 // 1. Build one Form using Reactjs and also use usestate in 
 // it and data must be shown after submitting the form 
 // => Form Validation ->  regex  / usestate / onsubmit button data must be shown
+// Form validation using regex // proper form validation in js 
 
 import "./Body.css"
 // import React, {useState}
@@ -31,8 +32,6 @@ export const FormValidation = () => {
 
     const [firstname, setFirstName] = useState(''); // destructuring 
     const [lastname, setLastName] = useState('');
-
-
 
     const [email, setEmail] = useState('');
     const [number, setNumber] = useState('');
@@ -68,8 +67,6 @@ export const FormValidation = () => {
 
     const handleSubmit = (event) => {
         // Prevent default form submission
-// Form validation using regex 
-
 
         event.preventDefault();
         console.log("FirstName:", firstname);

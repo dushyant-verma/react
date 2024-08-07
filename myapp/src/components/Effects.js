@@ -6,10 +6,14 @@ const Effects = () => {
     const [val, setVal] = useState(0)
 
     function handleClick() {
-        setCount(count + 1)
+        setCount(count + 1)  // value must be updated by 1 value 
     }
 
-    async function api() {
+
+
+
+
+    async function api() {  // 
         const url = await fetch("https://fakestoreapi.com/products")
         console.log(url);
         const data = await url.json()

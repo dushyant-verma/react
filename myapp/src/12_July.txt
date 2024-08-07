@@ -8,13 +8,13 @@ Class Component
 -->  by universal star *
 
 // React fragments 
---> Its uses 
+--> Its uses <></>
 --> wrapping and does not take space in the dom
 --> we cannot use any attributes inside the empty fragments  
 
 
-// Difference between jsx and html
-// import and export 
+// Difference between  and html
+//jsx import and export 
 
 
 // Tasks for =>
