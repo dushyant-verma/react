@@ -13,6 +13,8 @@ import Counter from './components/ClassComponent';
 import Conditionalrendering from './components/Conditionalrendering';
 import ReactList from './components/ReactList';
 import SignupToggle from './components/SignupToggle';
+import MapData from './components/MapData';
+import Hooks from './Hooks';
 
 // const body = Header
 // b()
@@ -39,7 +41,11 @@ function App() {
       {/* <Counter/> */}
 
       {/* <Conditionalrendering/> */}
-      <SignupToggle />
+      {/* <SignupToggle /> */}
+      {/* <MapData/> */}
+
+<Hooks/>
+      {/* <MapData /> */}
       {/* <ReactList/> */}
     </>
   );
