@@ -3,6 +3,7 @@ import { useState } from "react";
 export default function SignupToggle() {
 
     const [account, setAccount] = useState(true);
+    
 
 
     return (
