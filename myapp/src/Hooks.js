@@ -16,16 +16,20 @@ const Hooks = () => {
     
 
     return (
+
         <div>
-            <h1 className='text-3xl '> Hooks</h1>
+
+            <h1 className='text-3xl'> Hooks</h1>
             useState hooks
             <h5>{state}</h5>
             <button onClick={increase}>increase</button>
+          
+          
             <h3>{value}</h3>
-
             <input onChange={handleInput} placeholder='please enter here' />
 
         </div>
+        
     )
 }
 
