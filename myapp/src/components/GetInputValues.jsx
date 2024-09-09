@@ -10,6 +10,11 @@ const GetInputValues = () => {
         setValue(e.target.value)
     }
 
+    const ConsoleValue = () => {
+
+        console.log(value) 
+    }
+
     // console.log(value)
 
     return (
@@ -17,6 +22,7 @@ const GetInputValues = () => {
         <>
             <h4>{value}</h4>
             <input onChange={InputHandling} placeholder="Enter values here" />
+            <button onClick={ConsoleValue}>Save Info</button>
 
         </>
     )

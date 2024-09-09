@@ -17,6 +17,7 @@ import MapData from './components/MapData';
 import Hooks from './Hooks';
 import GetInputValues from './components/GetInputValues';
 import { CounterNew } from './components/CounterNew';
+import UseEffect from './components/UseEffect';
 // const body = Header
 // b()
 // let {Body,Footer} ={ Body:Body,Footer:Footer}
@@ -48,9 +49,9 @@ function App() {
       {/* <Hooks/> */}
       {/* <MapData /> */}
       {/* <ReactList/> */}
-      {/* <GetInputValues /> */}
+      <GetInputValues />
       <CounterNew />
-
+<UseEffect/>
 
     </>
   );
