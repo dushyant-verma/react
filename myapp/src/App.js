@@ -18,6 +18,8 @@ import Hooks from './Hooks';
 import GetInputValues from './components/GetInputValues';
 import { CounterNew } from './components/CounterNew';
 import UseEffect from './components/UseEffect';
+import Useref from './components/Useref';
+import Usereducer from './components/Usereducer';
 // const body = Header
 // b()
 // let {Body,Footer} ={ Body:Body,Footer:Footer}
@@ -49,10 +51,12 @@ function App() {
       {/* <Hooks/> */}
       {/* <MapData /> */}
       {/* <ReactList/> */}
-      <GetInputValues />
-      <CounterNew />
-<UseEffect/>
+      {/* <GetInputValues /> */}
+      {/* <CounterNew /> */}
+{/* <UseEffect/> */}
+<Useref/>
 
+<Usereducer/>
     </>
   );
 }
