@@ -20,6 +20,8 @@ import { CounterNew } from './components/CounterNew';
 import UseEffect from './components/UseEffect';
 import Useref from './components/Useref';
 import Usereducer from './components/Usereducer';
+import UserefChangeColor from './components/UserefChangeColor';
+import UsememoHook from './components/UsememoHook';
 // const body = Header
 // b()
 // let {Body,Footer} ={ Body:Body,Footer:Footer}
@@ -33,7 +35,6 @@ function App() {
       {/* <Body/> */}
       {/* <Footer/> */}
       {/* <NavMenu/> */}
-      {/* <FormValidation/> */}
 
       {/* <ClickCounter name={data}/>  */}
 
@@ -53,10 +54,12 @@ function App() {
       {/* <ReactList/> */}
       {/* <GetInputValues /> */}
       {/* <CounterNew /> */}
-{/* <UseEffect/> */}
-<Useref/>
-
-<Usereducer/>
+      {/* <UseEffect/> */}
+      {/* <Useref/> */}
+      {/* <UserefChangeColor /> */}
+      {/* <Usereducer/> */}
+      {/* <FormValidation /> */}
+      <UsememoHook />
     </>
   );
 }
