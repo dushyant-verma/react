@@ -22,44 +22,75 @@ import Useref from './components/Useref';
 import Usereducer from './components/Usereducer';
 import UserefChangeColor from './components/UserefChangeColor';
 import UsememoHook from './components/UsememoHook';
+import { useState } from 'react';
+import Parent from './Parent';
+import {BrowserRouter as Router , Routes , Route} from 'react-router-dom'
 // const body = Header
 // b()
 // let {Body,Footer} ={ Body:Body,Footer:Footer}
+
+import { counterContext } from './context/context';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
 function App() {
   const data = 'hello world'
   const newData = 'new hello world'
   const str = 'This is an String'
+
+  const [num, setNum] = useState(0)
   return (
     <>
-      {/* <Header/> */}
-      {/* <Body/> */}
-      {/* <Footer/> */}
-      {/* <NavMenu/> */}
+      <counterContext.Provider value={num} >
+        <Router>
+          <Navbar/>
+          <Routes>
+            <Route path='/' element={<Home/>}  />
+            <Route path='/memo' element={<UsememoHook/>}  />
+            <Route path='/reducer' element={<Usereducer/>}  />
+            <Route path='/effect/' element={<UseEffect/>}  />   
+          </Routes>
+          
+        </Router>
+        {/* <Header/> */}
+        {/* <Body/> */}
+        {/* <Footer/> */}
+        {/* <NavMenu/> */}
 
-      {/* <ClickCounter name={data}/>  */}
+        {/* <ClickCounter name={data}/>  */}
 
-      {/* <ClickCounter name={newData}/> */}
+        {/* <ClickCounter name={newData}/> */}
 
-      {/* <HideShow  randomProp={str}/> */}
-      {/* <TodoApp /> */}
-      {/* <Effects/> */}
-      {/* <Counter/> */}
+        {/* <HideShow  randomProp={str}/> */}
+        {/* <TodoApp /> */}
+        {/* <Effects/> */}
+        {/* <Counter/> */}
 
-      {/* <Conditionalrendering/> */}
-      {/* <SignupToggle /> */}
-      {/* <MapData/> */}
+        {/* <Conditionalrendering/> */}
+        {/* <SignupToggle /> */}
+        {/* <MapData/> */}
 
-      {/* <Hooks/> */}
-      {/* <MapData /> */}
-      {/* <ReactList/> */}
-      {/* <GetInputValues /> */}
-      {/* <CounterNew /> */}
-      {/* <UseEffect/> */}
-      {/* <Useref/> */}
-      {/* <UserefChangeColor /> */}
-      {/* <Usereducer/> */}
-      {/* <FormValidation /> */}
-      <UsememoHook />
+        {/* <Hooks/> */}
+        {/* <MapData /> */}
+        {/* <ReactList/> */}
+        {/* <GetInputValues /> */}
+        {/* <CounterNew /> */}
+        {/* <UseEffect/> */}
+        {/* <Useref/> */}
+        {/* <UserefChangeColor /> */}
+        {/* <Usereducer/> */}
+        {/* <FormValidation /> */}
+        {/* <UsememoHook /> */}
+
+        {/* <button className='bg-gray-500 p-4 m-4' onClick={() => setNum(num + 1)}  >+</button>
+        <button className='bg-gray-500 p-4 m-4' onClick={() => setNum(num - 1)} >-</button> */}
+
+        {/* <button onClick={() => setNum(num + 1)}>+</button>  Basic Counters */}
+        {/* <button onClick={() => setNum(num - 1)}>-</button> Basic Counters */}
+
+
+        {/* <Parent num={num} /> */}
+    
+      </counterContext.Provider>
     </>
   );
 }
